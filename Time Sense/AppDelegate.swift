@@ -10,11 +10,21 @@ import Cocoa
 @main
 class AppDelegate: NSObject, NSApplicationDelegate {
 
-    
+    var observers = [NSKeyValueObservation]()
+    func observeAppChange(){
+        self.observers = [
+            NSWorkspace.shared.observe(\.frontmostApplication, options: [.initial]) { (model, change) in
+                let frontMostApp = NSWorkspace.shared.frontmostApplication
+                let appName = frontMostApp?.localizedName
+                print(appName!)
+            }
+        ]
+    }
 
 
     func applicationDidFinishLaunching(_ aNotification: Notification) {
         // Insert code here to initialize your application
+        observeAppChange()
     }
 
     func applicationWillTerminate(_ aNotification: Notification) {
