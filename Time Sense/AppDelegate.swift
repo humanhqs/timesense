@@ -9,14 +9,22 @@ import Cocoa
 
 @main
 class AppDelegate: NSObject, NSApplicationDelegate {
-
+    
     var observers = [NSKeyValueObservation]()
     func observeAppChange(){
         self.observers = [
             NSWorkspace.shared.observe(\.frontmostApplication, options: [.initial]) { (model, change) in
                 let frontMostApp = NSWorkspace.shared.frontmostApplication
                 let appName = frontMostApp?.localizedName
+                var secondsFromGMT: Int = TimeZone.current.secondsFromGMT()
+                var currentDate: TimeInterval = Date().timeIntervalSince1970
+                var isDaylightSaving: Bool = TimeZone.current.isDaylightSavingTime()
+                if isDaylightSaving {
+                    currentDate = currentDate-(60*60)
+                }
                 print(appName!)
+                print(secondsFromGMT)
+                print(currentDate)
             }
         ]
     }
