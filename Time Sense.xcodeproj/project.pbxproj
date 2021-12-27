@@ -12,7 +12,7 @@
 		2203790A277991170072CE46 /* Time_Sense.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 22037908277991170072CE46 /* Time_Sense.xcdatamodeld */; };
 		2203790C2779911A0072CE46 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2203790B2779911A0072CE46 /* Assets.xcassets */; };
 		2203790F2779911A0072CE46 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2203790D2779911A0072CE46 /* Main.storyboard */; };
-		2278D5E82779C2980087BF69 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 2278D5E72779C2980087BF69 /* README.md */; };
+		2278D5EA277A87420087BF69 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 2278D5E9277A87420087BF69 /* README.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,7 +23,7 @@
 		2203790B2779911A0072CE46 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2203790E2779911A0072CE46 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		220379102779911A0072CE46 /* Time_Sense.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Time_Sense.entitlements; sourceTree = "<group>"; };
-		2278D5E72779C2980087BF69 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		2278D5E9277A87420087BF69 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -40,6 +40,7 @@
 		220378F8277991170072CE46 = {
 			isa = PBXGroup;
 			children = (
+				2278D5E9277A87420087BF69 /* README.md */,
 				22037903277991170072CE46 /* Time Sense */,
 				22037902277991170072CE46 /* Products */,
 			);
@@ -57,7 +58,6 @@
 			isa = PBXGroup;
 			children = (
 				22037904277991170072CE46 /* AppDelegate.swift */,
-				2278D5E72779C2980087BF69 /* README.md */,
 				22037906277991170072CE46 /* ViewController.swift */,
 				2203790B2779911A0072CE46 /* Assets.xcassets */,
 				2203790D2779911A0072CE46 /* Main.storyboard */,
@@ -125,7 +125,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2278D5E82779C2980087BF69 /* README.md in Resources */,
+				2278D5EA277A87420087BF69 /* README.md in Resources */,
 				2203790C2779911A0072CE46 /* Assets.xcassets in Resources */,
 				2203790F2779911A0072CE46 /* Main.storyboard in Resources */,
 			);
